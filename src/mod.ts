@@ -6,6 +6,9 @@ export interface EventStreamData {
 /**
  * A parser for EventStream data
  * @example
+ * const response = await fetch("https://example.com/stream");
+ * const stream = response.body;
+ * 
  * for await (const { event, data } of EventStreamParser.parse(stream)) {
  *   console.log("Event:", event); // Print the value for "event:"
  *   console.log("Data:", data); // Print the value for "data:"
