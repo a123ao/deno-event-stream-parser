@@ -5,6 +5,13 @@ export interface EventStreamData {
 
 /**
  * A parser for EventStream data
+ * @example
+ * for await (const { event, data } of EventStreamParser.parse(stream)) {
+ *   console.log("Event:", event); // Print the value for "event:"
+ *   console.log("Data:", data); // Print the value for "data:"
+ * }
+ * 
+ * @see https://github.com/a123ao/deno-event-stream-parser
  */
 export class EventStreamParser {
   /**
